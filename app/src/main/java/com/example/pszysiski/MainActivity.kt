@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
             label.text = label.text.toString() + textbox.text.toString()
         }
         findViewById<Button>(R.id.button2).setOnClickListener {
-            label.text = "imie i nazwisko"
+            label.text = "Michał Leszczyński"
         }
     }
 }
