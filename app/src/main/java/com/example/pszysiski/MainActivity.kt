@@ -12,7 +12,10 @@ class MainActivity : AppCompatActivity() {
         val label = findViewById<TextView>(R.id.textView)
         val textbox = findViewById<TextView>(R.id.editTextTextPersonName)
         findViewById<Button>(R.id.button).setOnClickListener {
-            label.setText(label.text + textbox.text)
+            label.text = label.text.toString() + textbox.text.toString()
+        }
+        findViewById<Button>(R.id.button2).setOnClickListener {
+            label.text = "imie i nazwisko"
         }
     }
 }
